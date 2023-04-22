@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/voldet.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="head">
+            <H2>OUR VOLUNTEERS</H2>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>CONTACT</th>
+                    <th>EMAIL</th>
+                    <th>BLOOD GROUP</th>
+                    <th>GENDER</th>
+                    <th>CITY</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%foundVoln.forEach(function(voln){%>
+                <tr>
+                    <td><%=voln.name%></td>
+                    <td><%=voln.age%></td>
+                    <td><%=voln.phoneno%></td>
+                    <td><a href="mailto:<%=voln.email%>"><%=voln.email%></a></td>
+                    <td><%=voln.bloodgroup%></td>
+                    <td><%=voln.gender%></td>
+                    <td><%=voln.city%></td>
+                </tr>
+            <%})%>
+                
+                
+                <!-- and so on... -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

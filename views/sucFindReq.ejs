@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sucfin.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="head">
+            <H2>Details of the donor whose donation date is in the coming days.</H2>
+            <H2>You can request them to donate for your beloved one by contacting them using below details.</H2>
+            <H2  style="color: black; font-size:30px;" ><%=message%></H2>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>CONTACT</th>
+                    <th>EMAIL</th>
+                    <th>BLOOD GROUP</th>
+                    <th>GENDER</th>
+                    <th>CITY</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%foundDon.forEach(function(donor){%>
+                <tr>
+                    <td><%=donor.name%></td>
+                    <td><%=donor.age%></td>
+                    <td><%=donor.mobilenum%></td>
+                    <td><a href="mailto:<%=donor.email%>"><%=donor.email%></a></td>
+                    <td><%=donor.bloodgroup%></td>
+                    <td><%=donor.gender%></td>
+                    <td><%=donor.city%></td>
+                </tr>
+            <%})%>
+
+                            
+                <!-- and so on... -->
+            </tbody>
+            
+        </table>
+        <form action="/sos" method="post" class="sosform">
+            <p>Details of patient</p>
+            <p name="name">Patient Name        : <%=pname%> </p>
+            <p name="phoneno">Mobile No.   : <%=phoneno%> </p>
+            <p name="email">Email        : <%=email%></p>
+            <p name="age">Age          : <%=age%></p>
+            <p name="bloodgroup">Blood Group required : <%=bloodgroup%> </p>
+            <p name="address">Address      : <%=address%></p>
+            <p name="city">City         : <%=city%></p>
+            <p name="state">State        : <%=state%></p>
+            
+            <p>Emergency donor required send emergency SOS by clicking below</p>
+            <button type="submit" style="color: rgb(34, 255, 0);" class="sosbtn">Send SOS</button>
+        </form>
+    </div>
+</body>
+
+</html>

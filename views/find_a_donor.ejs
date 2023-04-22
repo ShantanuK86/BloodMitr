@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://kit.fontawesome.com/a1aa160b35.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/findADonor.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title>find_a_donor</title>
+
+</head>
+
+<body>
+
+  <img class="bgimage" src="images/bg_image.jpg" alt="tc-logo">
+  <div class="container">
+    <div class="col-lg-6 ">
+      <form id="blood-donor-form" action="/fadon" method="post">
+
+
+        <div class="card">
+
+          <div class="card-header">
+            <h3> Form of Life </h3>
+          </div>
+          <div class="card-body">
+            <div>
+              <label for="name">Patient Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="gender">
+              <label class="mb-3 mr-1" for="gender">Gender: </label>
+
+              <input type="radio" class="btn-check" name="gender" value="male" id="male" autocomplete="off" required>
+              <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+
+              <input type="radio" class="btn-check" name="gender" value="female" id="female" autocomplete="off"
+                required>
+              <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+
+
+              <div class="valid-feedback mv-up">You selected a gender!</div>
+              <div class="invalid-feedback mv-up">Please select a gender!</div>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="age">Age:</label>
+              <input type="text" id="age" name="age" required>
+            </div>
+            <div>
+              <label for="blood-group">Blood Group:</label>
+              <select id="blood-group" name="bloodgroup" required>
+                <option value="">Select a Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+            </div>
+            <div>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+              <label for="state">State:</label>
+              <select class="form-control" name="state" id="state" placeholder="Select your State" required>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+              <br>
+
+            </div>
+            <div>
+              <label for="City">City:</label>
+              <select class="form-control" id="city" name="city" placeholder="Select your city">
+                <option value="default">Select Your city</option>
+
+              </select>
+              <br>
+
+            </div>
+            <div>
+              <label for="address">Address:</label>
+              <br>
+              <textarea id="address" name="address" required></textarea>
+            </div>
+            <button type="submit" class="submitbtn">Submit</button>
+          </div>
+          
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+          <h2>I am feeling so happy for getting this golden opportunity of donating blood and saves other's life .</h2>
+          <img class=" testimonial-image" src="images/suyash.jpg" alt="dog-profile">
+          <em>Suyash Rai , Meerut</em>
+        </div>
+
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Feeling great for being a part of such a Noble cause, </h2>
+          <img class="testimonial-image" src="images/Aviral.jpg" alt="lady-profile">
+
+          <em>Aviral, Bhopal</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Bloodmitr help's me to find a donor of rare blood type.</h2>
+          <img class="testimonial-image" src="images/nikhil.jpg" alt="lady-profile">
+
+          <em>Nikhil Gupta , Bareilly</em>
+        </div>
+
+
+      </div>
+
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+
+    </div>
+    <footer id="footer">
+      <div class="icons">
+        <i class="font-icon fa-brands fa-twitter  fa-2x   space"></i>
+        <i class="font-icon fa-brands fa-facebook-f fa-2x space"></i>
+        <i class="font-icon fa-brands fa-instagram fa-2x  space"></i>
+        <i class="font-icon fa-solid fa-envelope fa-2x    space"></i>
+      </div>
+
+    </footer>
+  </section>
+  <script src="js/f_donor.js"></script>
+</body>
+
+</html>
