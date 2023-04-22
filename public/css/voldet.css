@@ -1,0 +1,73 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+        background: linear-gradient(to top, #ea7e7e 0%, #b67f7f 52%, #d59f9f 100%);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      
+}
+
+.head {
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: 5%;
+
+}
+
+.styled-table thead tr {
+    background-color: #ce0101;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 14px 17px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #fbf8f8;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #f0caca;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}

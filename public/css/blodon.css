@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  background-color: #aaa;
+
+}
+
+hr{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 5px 10px rgba(226, 211, 211, 0.1);
+    border-radius: 15px;
+    
+    background: linear-gradient(#a9d48e, #009688);
+}
+
+.container header{
+     font-size: 20px;
+     font-weight: 600;
+     color: #333;
+
+}
+h1{
+    color: #2e2e2e;
+}
+.container header ::before{
+    content: "";
+    position: absolute;
+    
+    left: 0;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container form{
+    position : relative;
+    min-height: 490px;
+    margin-top: 16px;
+    
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px;
+}
+
+.check-label .checkAlign{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.check-label .checkAlign label{
+    width: calc(100% / 3 - 15px);
+}
+
+.check-label label :hover{
+    background-color: #3d3333;
+}
+
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, select, button{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+    
+}
+
+.input-field input[type="file"] {
+    background: #fff;
+}
+
+
+.input-field input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+
+}
+
+.input-field button{
+    cursor: pointer;
+}
+
+.input-field .status{
+    cursor: pointer;
+}
+
+.input-field input[type="date"]:valid{
+    color: #333;
+
+}
+
+
+.allergies label{
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+.deficiency label{
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 10px;}
+
+.check-label{
+    font-size: 15px;
+    font-weight: 420;
+    margin-bottom: 20px;
+    
+}
+
+.check-label label{
+    font-size: 15px;
+    font-weight: 420;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+.check-label input[type="checkbox"]{
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+   
+	background-color: #006C9E;
+    border-radius: 15px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #02577e;
+}
+
+.backvid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+input[type="radio"]{
+	cursor: pointer;
+}

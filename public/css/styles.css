@@ -1,0 +1,32 @@
+.navbar{
+    width: 100%;
+}
+
+.first-container{
+   
+}
+.brand-img{
+    background-color: transparent;
+}
+.container-fluid{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.navITEM{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right:10px;
+    margin-left:5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 350;
+    text-decoration: none;
+    color: #fff;
+}
+*{
+    font-family: montserrat;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}

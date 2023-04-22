@@ -1,0 +1,129 @@
+
+form {
+  text-align: left;
+  width: 700px;
+  height: 800px;
+  margin-top: 4.5%;
+  
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 5px;
+    /* border-radius: 5px; */
+    border: 1px solid gray;
+    width: 1150px;
+    max-width: 100%;
+    border-style: none  none solid;
+    display: block;
+    margin-top: 7px;
+  }
+  
+  /* .submitbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    
+    width: 100px;
+   
+    margin-top: 20px;
+  }
+  
+  .submitbtn:hover {
+    background-color: #126715;
+  } */
+ .carousel-control-prev{
+  color: black;
+ }
+
+ .container{
+  display: flex;
+  justify-content: center;
+
+ }
+.container form{
+  padding-left: 10px;
+}
+
+.container form .card{
+  background-color: #f5f5f1;
+ padding-right: 10px;
+ width: 650px;
+ margin-top: 20px;
+ margin-left: 300px;
+ box-shadow: 5px 10px 18px #888888;
+ 
+}
+
+
+#testimonials{
+  padding: 20px;
+   height: 700px;
+  text-align: center;
+  background-color: rgba(180, 0, 0, 0.991);
+  color:white;
+  
+}
+
+.testimonial-image{
+  
+  width: 11%;
+  border-radius: 100%;
+  
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 125px;
+ 
+}
+
+.bgimage{
+  height: 125%;
+  width: 100%;
+  position: absolute;
+
+}
+
+.container form .card-header{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+ width: 900px;
+  margin-top: 200px;
+  margin-left: 325px;
+
+}
+
+/* 
+button[type="button"]
+{
+  margin-top: 300px;
+} */
+
+
+#footer{
+    color:white;
+  text-align: center;
+  /* margin: 8% 7%; */
+  margin-top: 125px;
+  margin-bottom: 150px;
+}
+.space{
+  margin-right: 15px;
+}
+
+
+.gender{
+  margin-top: 15px;
+}
